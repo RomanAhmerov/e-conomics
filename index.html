@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://apktake.com/storage/d8ad9beba48de682e6accacba8cdbe2d/5f2af82c2a4f1ApkTake.com.png" type="image/x-icon">
+    <title>E-conomics</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script defer src="script/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" style="padding-left: 50px; background-image: url(https://apktake.com/storage/d8ad9beba48de682e6accacba8cdbe2d/5f2af82c2a4f1ApkTake.com.png); background-size: contain; background-repeat: no-repeat;" href="index.html">E-conomics</a>
+            
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Инвестиции</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">Кредит</label>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container">
+        <!-- Investments -->
+        <article class="investments mt-5">
+            <h2 class="display-1 text-center">Инвестиции</h2>
+
+            <div class="input-wrapper mt-5">
+                <div class="mb-3">
+                    <label for="initial-pay" class="form-label">Первоначальное вложение</label>
+                    <input type="number" class="form-control" id="initial-pay">
+                </div>
+
+                <div class="mb-3">
+                    <label for="mouth-pay" class="form-label">Ежемесячный платеж</label>
+                    <input type="number" class="form-control" id="mouth-pay">
+                </div>
+
+                <div class="mb-3">
+                    <label for="percent" class="form-label">Годовая прибыль, %</label>
+                    <input type="number" class="form-control" id="percent">
+                </div>
+
+                <div class="mb-3">
+                    <label for="count-year" class="form-label">Срок вложений</label>
+                    <input type="number" class="form-control" id="count-year">
+                </div>
+                
+                <button type="button" class="btn btn-primary invest-btn">Рассчитать</button>
+            </div>
+
+            <div class="alert alert-success mt-5 result d-none" role="alert"></div>
+        </article>
+
+        <!-- Credit -->
+        <article class="credit mt-5 d-none">
+            <h2 class="display-1 text-center">Кредит</h2>
+
+            <div class="input-wrapper mt-5">
+                <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="count-year" class="form-label">Сумма по кредиту</label>
+                        <input type="number" class="form-control" id="total-credit">
+                    </div>
+
+                    <label for="initial-pay" class="form-label">Первоначальный депозит</label>
+                    <input type="number" class="form-control" id="initial-pay-credit">
+                </div>
+
+                <div class="mb-3">
+                    <label for="mouth-pay" class="form-label">Ежемесячная оплата</label>
+                    <input type="number" class="form-control" id="mouth-pay-credit">
+                </div>
+
+                <div class="mb-3">
+                    <label for="percent" class="form-label">Годовой процент, %</label>
+                    <input type="number" class="form-control" id="percent-credit">
+                </div>
+                <button type="button" class="btn btn-primary credit-btn">Рассчитать</button>
+            </div>
+
+            <div class="alert alert-success mt-5 result-credit d-none" role="alert"></div>
+        </article>
+    </div>
+</body>
+</html>
